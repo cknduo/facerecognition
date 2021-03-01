@@ -27,7 +27,7 @@ class Register extends Component {
     }
 
     onSubmitRegister() {
-        fetch('http://localhost:3000/register', {
+        fetch('https://nameless-ridge-68689.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -70,7 +70,7 @@ class Register extends Component {
                     onClick={this.onSubmitRegister}
                     className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
                     type="submit" 
-                    value="Sign in" 
+                    value="Register" 
                 />
                 </div>
             </div>

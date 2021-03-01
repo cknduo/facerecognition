@@ -1,4 +1,3 @@
-// import userEvent from '@testing-library/user-event';
 import React, {Component} from 'react';
 
 class Signin extends Component {
@@ -22,7 +21,7 @@ class Signin extends Component {
     }
 
     onSubmitSignIn() {
-        fetch('http://localhost:3000/signin', {
+        fetch('https://nameless-ridge-68689.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
